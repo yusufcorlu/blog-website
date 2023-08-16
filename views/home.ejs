@@ -12,8 +12,9 @@
     <p> <%= post.content.substr(0, 100) + " ..." %> 
     <a href="/posts/<%= post.title %>">Read More</a>
     </p>
-  <% } %> 
-
+  <% } else { %> 
+    <p> <%= post.content %> </p>
+  <% } %>
 
 <% }); %>
 
